@@ -13,7 +13,7 @@ class CreateMstModelMakersTable extends Migration
      */
     public function up()
     {
-        Schema::create('mst_model_makers', function (Blueprint $table) {
+        Schema::create('mst_model_maker', function (Blueprint $table) {
             $table->increments('model_maker_code');
             $table->string('model_maker_hyouji', 255);
             $table->string('model_maker_name', 255)->nullable();
@@ -41,6 +41,6 @@ class CreateMstModelMakersTable extends Migration
     public function down()
     {
         Schema::dropIfExists('mst_model_v2');
-        Schema::dropIfExists('mst_model_makers');
+        Schema::dropIfExists('mst_model_maker');
     }
 }

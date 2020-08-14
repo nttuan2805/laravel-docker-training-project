@@ -16,3 +16,21 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/modelMakers', 'MstModelMakerController@index');
 Route::get('/modelMakers/{id}', 'MstModelMakerController@show');
+/**
+ * Get Header Data
+ */
+Route::get('/models/kanaPrefixHeader', 'MotobikeController@kanaPrefixHeader');
+Route::get('/models/namePrefixHeader', 'MotobikeController@namePrefixHeader');
+Route::get('/models/motoDisplacementHeader', 'MotobikeController@motoDisplacementHeader');
+
+/**
+ * Get Header Data has Model
+ */
+Route::get('/models/kanaPrefixHasModel', 'MotobikeController@kanaPrefixHasModel');
+Route::get('/models/namePrefixHasModel', 'MotobikeController@namePrefixHasModel');
+Route::get('/models/displacementHasModel', 'MotobikeController@displacementHasModel');
+
+/**
+ * Filter data
+ */
+Route::get('/models/filterMotobikeList/{kana?}/{name?}/{disp?}', 'MotobikeController@filterMotobikeList');

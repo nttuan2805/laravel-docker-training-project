@@ -69,7 +69,7 @@ class CreateMstModelV2STable extends Migration
         });
 
         Schema::table('mst_model_v2', function (Blueprint $table) {
-            $table->foreign('model_maker_code')->references('model_maker_code')->on('mst_model_makers');
+            $table->foreign('model_maker_code')->references('model_maker_code')->on('mst_model_maker');
         });
     }
 

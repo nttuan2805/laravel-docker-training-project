@@ -11,7 +11,7 @@ class MstModelMaker extends Model
      *
      * @var string
      */
-    protected $table = 'mst_model_makers';
+    protected $table = 'mst_model_maker';
 
     /**
      * The primary key associated with the table.

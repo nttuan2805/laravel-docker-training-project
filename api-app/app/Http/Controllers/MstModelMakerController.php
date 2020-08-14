@@ -9,11 +9,11 @@ class MstModelMakerController extends Controller
 {
     public function index()
     {
-        return MstModelMaker::all();
+        return response()->json(MstModelMaker::all());
     }
 
     public function show($id)
     {
-        return MstModelMaker::find($id);
+        return response()->json(MstModelMaker::find($id));
     }
 }
