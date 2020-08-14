@@ -35,31 +35,9 @@
     localhost:8081 // API Service  
     localhost:8082 // Frontend Service  
 
-### Install Laravel for Frontend
-1. Stop all containers  
-    $ docker container stop $(docker container ls -aq)		
-2. Remove all containers after stop  
-    $ docker container rm $(docker container ls -aq)		
-3. Remove all images  
-    $ docker rmi $(docker images -a -q) -f		
-4. Install and mount composer to docker container  
-    $ cd frontend-app  
-    $ docker run --rm -it -v ${PWD}:/app composer install		
-5. build  
-    $ cd .
-    $ docker-compose build --no-cache		
-6. Up  
-    $ docker-compose up -d  
-7. check after up  
-    $ docker ps		
-8. Generate key  
-    $ docker-compose exec php-frontend php artisan key:generate  
-    $ docker-compose exec php-frontend php artisan cache:clear  
-10. Access site  
-    localhost:8082
-
 ### Create table and seed data
 $ docker exec -it php-api bash
+$ composer dump-autoload
 $ php artisan migrate:refresh --seed
 
 ### Steps
