@@ -17,12 +17,16 @@
     $ docker-compose up -d  
 7. check after up  
     $ docker ps		
-8. Generate key  
+8. Create .env file (api-app and frontend-app)  
+    Copy .env.example, and change .env
+9. Change API_URL at .env file  
+    Please change API_URL by ip address of your computer at .evn file
+10. Generate key  
     $ docker-compose exec php-api php artisan key:generate  
     $ docker-compose exec php-api php artisan cache:clear  
     $ docker-compose exec php-frontend php artisan key:generate  
     $ docker-compose exec php-frontend php artisan cache:clear  
-9. Creating a User for Mysql  
+11. Creating a User for Mysql  
     $ docker exec -it db-api bash   // connect by mysql workbench with port 3308
     $ mysql -u root -p  
     $ mysql> show databases;  
@@ -31,7 +35,10 @@
     $ mysql> GRANT ALL PRIVILEGES ON webike.* TO 'devuser'@'%';  
     $ mysql> FLUSH PRIVILEGES;  
     $ mysql> exit;
-10. Test site  
+12. Create and import data for webike db
+    connect api-db: [Hostname: 127.0.0.1, Port: 3308, Username: root, Password: root]
+    Run api-app/schemas/webike_schema.sql file
+13. Test site  
     localhost:8081 // API Service  
     localhost:8082 // Frontend Service  
 
