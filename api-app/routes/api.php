@@ -21,7 +21,8 @@ Route::get('/modelMakers/{id}', 'MstModelMakerController@show');
  */
 Route::get('/models/kanaPrefixHeader', 'MotobikeController@kanaPrefixHeader');
 Route::get('/models/namePrefixHeader', 'MotobikeController@namePrefixHeader');
-Route::get('/models/motoDisplacementHeader', 'MotobikeController@motoDisplacementHeader');
+Route::get('/models/displacementHeader', 'MotobikeController@displacementHeader');
+Route::get('/models/markerHeader', 'MotobikeController@markerHeader');
 
 /**
  * Get Header Data has Model
@@ -33,4 +34,4 @@ Route::get('/models/displacementHasModel', 'MotobikeController@displacementHasMo
 /**
  * Filter data
  */
-Route::get('/models/filterMotobikeList/{kana?}/{name?}/{disp?}', 'MotobikeController@filterMotobikeList');
+Route::get('/models/filterMotobikeList/{kana?}/{name?}/{disp?}/{mak?}', 'MotobikeController@filterMotobikeList');

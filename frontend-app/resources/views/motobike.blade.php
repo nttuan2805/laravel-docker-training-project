@@ -1,7 +1,9 @@
+@include('header')
+
 <table>
-<tr>
-    <th>頭文字</th>
-    <td id="kanaPrefix">
+    <tr>
+        <th>頭文字</th>
+        <td id="kanaPrefix">
         @foreach ($kanaPrefixHeader as $kanaPrefix)
             @switch($kanaPrefix)
                 @case('a')
@@ -36,18 +38,60 @@
                     @break
             @endswitch
 
-            @if (in_array($kanaPrefixHasModel, $kanaPrefix))
-                @php ($hasOrNotdisabled = 'class=disabled')
-            @else
+            @if(in_array($kanaJP, $kanaPrefixHasModel))
                 @php ($hasOrNotdisabled = '')
+            @else
+                @php ($hasOrNotdisabled = ', disabled')
             @endif
-            <a class="kanaPrefixLink" href='{{ kanaPrefix }}' {{ $hasOrNotdisabled }}>{{ $kanaJP }}行&nbsp;&nbsp;&nbsp;&nbsp;</a>
+
+            <a class="kanaPrefixLink {{ $hasOrNotdisabled }}" href='{{ $kanaPrefix }}' >{{ $kanaJP }}行&nbsp;&nbsp;&nbsp;&nbsp;</a>
         @endforeach
-        {% endfor %}
-    </td>
-</tr>
+        </td>
+    </tr>
+    <tr>
+        <th>英数字</th>
+        <td id="namePrefix">
+        @foreach ($namePrefixHeader as $namePrefix)
+            @if(in_array($namePrefix, $namePrefixHasModel))
+                @php ($hasOrNotdisabled = '')
+            @else
+                @php ($hasOrNotdisabled = ', disabled')
+            @endif
+
+            <a class="namePrefixLink {{ $hasOrNotdisabled }}" href='{{ $namePrefix }}' >{{ $namePrefix }}&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        @endforeach
+        </td>
+    </tr>
+    <th>排気量</th>
+        <td id="motoDisplace">
+        @foreach ($displacementHeader as $disp)
+            @if(in_array($disp, $displacementHasModel))
+                @php ($hasOrNotdisabled = '')
+            @else
+                @php ($hasOrNotdisabled = ', disabled')
+            @endif
+
+            <a class="{{ $hasOrNotdisabled }}" href='{{ $disp }}' >{{ $disp }}&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        @endforeach
+        </td>
+    </tr>
+    <th>メーカー</th>
+        <td id="marker">
+        @foreach ($markerHeader as $maker)
+
+            <a class="" href='{{ $maker['model_maker_code'] }}' >{{ $maker['model_maker_hyouji'] }}&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        @endforeach
+        </td>
+    </tr>
 </table>
+
+<input type="hidden" id="kanaPrefixFilter"  name="kanaPrefixFilter" value="ab" />
+<input type="hidden" id="namePrefixFilter"  name="namePrefixFilter" value="" />
+<input type="hidden" id="motoDisplacement"  name="motoDisplacement" value="" />
+<input type="hidden" id="modelMakerCode"    name="modelMakerCode"   value="" />
 
 <div id="response">
 
 </div>
+
+@include('footer')

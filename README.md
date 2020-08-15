@@ -56,3 +56,7 @@ php artisan db:seed
 
 ### Create Controllers
 php artisan make:controller MstModelMakerController
+
+### Note
+If rate limiter error is occured, please clear cache and do again  
+$ php artisan cache:clear
