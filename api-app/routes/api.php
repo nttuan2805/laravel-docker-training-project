@@ -30,8 +30,9 @@ Route::get('/models/markerHeader', 'MotobikeController@markerHeader');
 Route::get('/models/kanaPrefixHasModel', 'MotobikeController@kanaPrefixHasModel');
 Route::get('/models/namePrefixHasModel', 'MotobikeController@namePrefixHasModel');
 Route::get('/models/displacementHasModel', 'MotobikeController@displacementHasModel');
+Route::get('/models/markerHasModel', 'MotobikeController@markerHasModel');
 
 /**
  * Filter data
  */
-Route::get('/models/filterMotobikeList/{kana?}/{name?}/{disp?}/{mak?}', 'MotobikeController@filterMotobikeList');
+Route::get('/models/filterMotobikeList/{kana?}/{name?}/{disp?}/{maker?}', 'MotobikeController@filterMotobikeList');

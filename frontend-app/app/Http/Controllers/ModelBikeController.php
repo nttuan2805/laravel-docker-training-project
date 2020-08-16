@@ -52,12 +52,8 @@ class ModelBikeController extends Controller
          */
         $response = $client->request('GET', '/api/models/markerHeader');
         $markerHeader = json_decode($response->getBody()->getContents(), true);
-        //$response = $client->request('GET', '/api/models/displacementHasModel');
-        //$displacementHasModel = json_decode($response->getBody()->getContents());
-
-        // echo "<pre>";
-        // print_r($markerHeader);
-        // echo "</pre>";
+        $response = $client->request('GET', '/api/models/markerHasModel');
+        $markerHasModel = array_column(json_decode($response->getBody()->getContents()), 'model_maker_code');
 
         return view('motobike', [
             'kanaPrefixHeader' => $kanaPrefixHeader,
@@ -66,20 +62,19 @@ class ModelBikeController extends Controller
             'namePrefixHasModel' => $namePrefixHasModel,
             'displacementHeader' => $displacementHeader,
             'displacementHasModel' => $displacementHasModel,
-            'markerHeader' => $markerHeader]);
+            'markerHeader' => $markerHeader,
+            'markerHasModel' => $markerHasModel]);
     }
 
     public function filter(Request $request)
     {
         $inputs = $request->all();
-        //$kana = $inputs['kana'];
-        //$name = $inputs['name'];
-        $kana = 'a';
-        $name = '';
-        $disp = '';
-        $mak = '';
+        $kana = $inputs['kana'];
+        $name = $inputs['name'];
+        $disp = $inputs['disp'];
+        $maker = $inputs['maker'];
 
-        $paras = $kana . '/' . $name . '/' . $disp . "/" . $mak;
+        $paras = $kana . '/' . $name . '/' . $disp . "/" . $maker;
         $client = new Client(['base_uri' => env('API_URL')]);
         $response = $client->request('GET', '/api/models/filterMotobikeList/' . $paras);
         $result = json_decode($response->getBody()->getContents(), true);

@@ -70,6 +70,13 @@ class MotobikeController extends Controller
             ->get();
 
         $makerCodes = array_column($makerCodes->toArray(), 'maker_code');
+
+        return MstModelMaker::select('mst_model_maker.model_maker_code')
+            ->leftJoin('mst_model_v2', 'mst_model_maker.model_maker_code', '=', 'mst_model_v2.model_maker_code')
+            ->whereIn('mst_model_maker.model_maker_code', $makerCodes)
+            ->groupBy('mst_model_maker.model_maker_code')
+            ->orderBy('mst_model_maker.model_maker_select_view_no')
+            ->get();
     }
 
     public function kanaPrefixHasModel()
@@ -117,7 +124,7 @@ class MotobikeController extends Controller
         return $displacements;
     }
 
-    public function filterMotobikeList($kana=null,  $name=null, $disp=null, $mak=null)
+    public function filterMotobikeList($kana=null,  $name=null, $disp=null, $maker=null)
     {
         $query = MstModelV2::selectRaw(
                 'model_name,
@@ -127,24 +134,29 @@ class MotobikeController extends Controller
                  TRUNCATE(IFNULL(model_kakaku_max, 0) / 10000, 2) as model_kakaku_max,
                  model_image_url');
 
-        if(!empty($kana))
+        if(!empty($kana) && $kana != '0')
         {
             $kanaPrefixs = $this->alphabel_jp[$kana];
             $query->whereIn('model_kana_prefix', $kanaPrefixs);
         }
 
-        if(!empty($name))
+        if(!empty($name) && $name != '0')
         {
             $query->where('model_name_prefix', $name);
         }
 
-        if(!empty($disp))
+        if(!empty($disp) && $disp != '0')
         {
             $fromDisplace = $this->motoDisplacement[$disp][0];
             $toDisplace = $this->motoDisplacement[$disp][1];
 
             $query->where('model_displacement', '>', $fromDisplace);
             $query->where('model_displacement', '<=', $toDisplace);
+        }
+
+        if(!empty($maker) && $maker != '0')
+        {
+            $query->where('model_maker_code', '=', $maker);
         }
 
         $query->where('model_count', '>', 0)

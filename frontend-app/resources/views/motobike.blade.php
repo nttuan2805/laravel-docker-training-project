@@ -71,24 +71,29 @@
                 @php ($hasOrNotdisabled = ', disabled')
             @endif
 
-            <a class="{{ $hasOrNotdisabled }}" href='{{ $disp }}' >{{ $disp }}&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a class="motoDisplaceLink {{ $hasOrNotdisabled }}" href='{{ $disp }}' >{{ $disp }}&nbsp;&nbsp;&nbsp;&nbsp;</a>
         @endforeach
         </td>
     </tr>
     <th>メーカー</th>
         <td id="marker">
         @foreach ($markerHeader as $maker)
+            @if(in_array($maker['model_maker_code'], $markerHasModel))
+                @php ($hasOrNotdisabled = '')
+            @else
+                @php ($hasOrNotdisabled = ', disabled')
+            @endif
 
-            <a class="" href='{{ $maker['model_maker_code'] }}' >{{ $maker['model_maker_hyouji'] }}&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a class="motoMarkerLink {{ $hasOrNotdisabled }}" href='{{ $maker['model_maker_code'] }}' >{{ $maker['model_maker_hyouji'] }}&nbsp;&nbsp;&nbsp;&nbsp;</a>
         @endforeach
         </td>
     </tr>
 </table>
 
-<input type="hidden" id="kanaPrefixFilter"  name="kanaPrefixFilter" value="ab" />
-<input type="hidden" id="namePrefixFilter"  name="namePrefixFilter" value="" />
-<input type="hidden" id="motoDisplacement"  name="motoDisplacement" value="" />
-<input type="hidden" id="modelMakerCode"    name="modelMakerCode"   value="" />
+<input type="hidden" id="kanaPrefixFilter"  name="kanaPrefixFilter" value="0" />
+<input type="hidden" id="namePrefixFilter"  name="namePrefixFilter" value="0" />
+<input type="hidden" id="motoDisplacement"  name="motoDisplacement" value="0" />
+<input type="hidden" id="modelMakerCode"    name="modelMakerCode"   value="0" />
 
 <div id="response">
 
