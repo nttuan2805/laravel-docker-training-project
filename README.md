@@ -37,9 +37,10 @@
     $ mysql> GRANT ALL PRIVILEGES ON webike_test.* TO 'devuser'@'%';  
     $ mysql> FLUSH PRIVILEGES;  
     $ mysql> exit;
-12. Create and import data for webike db
-    connect api-db: [Hostname: 127.0.0.1, Port: 3308, Username: root, Password: root]
-    Run api-app/schemas/webike_schema.sql file
+12. Create table for db (production) and db (testing)  
+    $ docker exec -it php-api bash  
+    $ composer dump-autoload  
+    $ php artisan migrate:fresh --seed
 13. Test site  
     localhost:8081 // API Service  
     localhost:8082 // Frontend Service  
@@ -47,7 +48,7 @@
 ### Create table and seed data
 $ docker exec -it php-api bash
 $ composer dump-autoload
-$ php artisan migrate:refresh --seed
+$ php artisan migrate:fresh --seed
 
 ### Steps
 php artisan make:model Article -m  

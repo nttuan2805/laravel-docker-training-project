@@ -1,0 +1,806 @@
+[
+	{
+		"category_maker_code" : 1,
+		"maker_code" : 1,
+		"category_code" : 1,
+		"category_type" : 1
+	},
+	{
+		"category_maker_code" : 2,
+		"maker_code" : 1,
+		"category_code" : 1,
+		"category_type" : 1
+	},
+	{
+		"category_maker_code" : 3,
+		"maker_code" : 1,
+		"category_code" : 1,
+		"category_type" : 1
+	},
+	{
+		"category_maker_code" : 4,
+		"maker_code" : 1,
+		"category_code" : 1,
+		"category_type" : 1
+	},
+	{
+		"category_maker_code" : 5,
+		"maker_code" : 1,
+		"category_code" : 1,
+		"category_type" : 1
+	},
+	{
+		"category_maker_code" : 6,
+		"maker_code" : 1,
+		"category_code" : 1,
+		"category_type" : 1
+	},
+	{
+		"category_maker_code" : 7,
+		"maker_code" : 4,
+		"category_code" : 1,
+		"category_type" : 1
+	},
+	{
+		"category_maker_code" : 8,
+		"maker_code" : 4,
+		"category_code" : 1,
+		"category_type" : 1
+	},
+	{
+		"category_maker_code" : 9,
+		"maker_code" : 4,
+		"category_code" : 1,
+		"category_type" : 1
+	},
+	{
+		"category_maker_code" : 10,
+		"maker_code" : 1,
+		"category_code" : 1,
+		"category_type" : 1
+	},
+	{
+		"category_maker_code" : 11,
+		"maker_code" : 4,
+		"category_code" : 1,
+		"category_type" : 1
+	},
+	{
+		"category_maker_code" : 12,
+		"maker_code" : 1,
+		"category_code" : 1,
+		"category_type" : 1
+	},
+	{
+		"category_maker_code" : 13,
+		"maker_code" : 1,
+		"category_code" : 1,
+		"category_type" : 1
+	},
+	{
+		"category_maker_code" : 14,
+		"maker_code" : 3,
+		"category_code" : 1,
+		"category_type" : 1
+	},
+	{
+		"category_maker_code" : 15,
+		"maker_code" : 3,
+		"category_code" : 1,
+		"category_type" : 1
+	},
+	{
+		"category_maker_code" : 16,
+		"maker_code" : 3,
+		"category_code" : 1,
+		"category_type" : 1
+	},
+	{
+		"category_maker_code" : 17,
+		"maker_code" : 3,
+		"category_code" : 1,
+		"category_type" : 1
+	},
+	{
+		"category_maker_code" : 18,
+		"maker_code" : 1,
+		"category_code" : 1,
+		"category_type" : 1
+	},
+	{
+		"category_maker_code" : 19,
+		"maker_code" : 4,
+		"category_code" : 1,
+		"category_type" : 1
+	},
+	{
+		"category_maker_code" : 20,
+		"maker_code" : 1,
+		"category_code" : 1,
+		"category_type" : 1
+	},
+	{
+		"category_maker_code" : 21,
+		"maker_code" : 1,
+		"category_code" : 1,
+		"category_type" : 1
+	},
+	{
+		"category_maker_code" : 22,
+		"maker_code" : 1,
+		"category_code" : 1,
+		"category_type" : 1
+	},
+	{
+		"category_maker_code" : 23,
+		"maker_code" : 1,
+		"category_code" : 1,
+		"category_type" : 1
+	},
+	{
+		"category_maker_code" : 24,
+		"maker_code" : 1,
+		"category_code" : 1,
+		"category_type" : 1
+	},
+	{
+		"category_maker_code" : 25,
+		"maker_code" : 1,
+		"category_code" : 1,
+		"category_type" : 1
+	},
+	{
+		"category_maker_code" : 26,
+		"maker_code" : 1,
+		"category_code" : 1,
+		"category_type" : 1
+	},
+	{
+		"category_maker_code" : 27,
+		"maker_code" : 1,
+		"category_code" : 1,
+		"category_type" : 1
+	},
+	{
+		"category_maker_code" : 28,
+		"maker_code" : 1,
+		"category_code" : 1,
+		"category_type" : 1
+	},
+	{
+		"category_maker_code" : 29,
+		"maker_code" : 1,
+		"category_code" : 1,
+		"category_type" : 1
+	},
+	{
+		"category_maker_code" : 30,
+		"maker_code" : 1,
+		"category_code" : 1,
+		"category_type" : 1
+	},
+	{
+		"category_maker_code" : 31,
+		"maker_code" : 1,
+		"category_code" : 1,
+		"category_type" : 1
+	},
+	{
+		"category_maker_code" : 32,
+		"maker_code" : 1,
+		"category_code" : 1,
+		"category_type" : 1
+	},
+	{
+		"category_maker_code" : 33,
+		"maker_code" : 1,
+		"category_code" : 1,
+		"category_type" : 1
+	},
+	{
+		"category_maker_code" : 34,
+		"maker_code" : 1,
+		"category_code" : 1,
+		"category_type" : 1
+	},
+	{
+		"category_maker_code" : 35,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 36,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 37,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 38,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 39,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 40,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 41,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 42,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 43,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 44,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 45,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 46,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 47,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 48,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 49,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 50,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 51,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 52,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 53,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 54,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 55,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 56,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 57,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 58,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 59,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 60,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 61,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 62,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 63,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 64,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 65,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 66,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 67,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 68,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 69,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 70,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 71,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 72,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 73,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 74,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 75,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 76,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 77,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 78,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 79,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 80,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 81,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 82,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 83,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 84,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 85,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 86,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 87,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 88,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 89,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 90,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 91,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 92,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 93,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 94,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 95,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 96,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 97,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 98,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 99,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 100,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 101,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 102,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 103,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 104,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 105,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 106,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 107,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 108,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 109,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 110,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 111,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 112,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 113,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 114,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 115,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 116,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 117,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 118,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 119,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 120,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 121,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 122,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 123,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 124,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 125,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 126,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 127,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 128,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 129,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 130,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 131,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 132,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 133,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	},
+	{
+		"category_maker_code" : 134,
+		"maker_code" : 1,
+		"category_code" : 2,
+		"category_type" : 2
+	}
+]
