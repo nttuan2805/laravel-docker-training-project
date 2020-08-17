@@ -14,8 +14,6 @@ class MotobikeSeeder extends Seeder
      */
     public function run()
     {
-        ini_set('max_execution_time', 120 ) ;
-
         $model_maker_path = storage_path() . "/json/mst_model_maker.json";
         $model_v2_path = storage_path() . "/json/mst_model_v2.json";
         $category_maker_path = storage_path() . "/json/tbl_category_maker.json";

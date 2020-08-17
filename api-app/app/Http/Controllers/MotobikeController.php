@@ -56,7 +56,7 @@ class MotobikeController extends Controller
     public function markerHeader($test = false)
     {
         $db = $test ? 'mysql2' : 'mysql';
-        
+
         return DB::connection($db)->table('mst_model_maker')->select('model_maker_code', 'model_maker_hyouji')
         ->groupBy('model_maker_code', 'model_maker_hyouji')
         ->orderBy('model_maker_code')
