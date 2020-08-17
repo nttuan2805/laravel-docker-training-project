@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use App\MstModelV2;
 use App\MstModelMaker;
 use App\TblCategoryMaker;
@@ -53,53 +53,44 @@ class MotobikeController extends Controller
         return response()->json(array_keys($this->motoDisplacement));
     }
 
-    public function markerHeader()
+    public function markerHeader($test = false)
     {
-        return MstModelMaker::select('model_maker_code', 'model_maker_hyouji')
-            ->groupBy('model_maker_code', 'model_maker_hyouji')
-            ->orderBy('model_maker_code')
-            ->limit(15)
-            ->get();
+        $db = $test ? 'mysql2' : 'mysql';
+        
+        return DB::connection($db)->table('mst_model_maker')->select('model_maker_code', 'model_maker_hyouji')
+        ->groupBy('model_maker_code', 'model_maker_hyouji')
+        ->orderBy('model_maker_code')
+        ->limit(15)
+        ->get();
     }
 
-    public function markerHasModel()
+    public function kanaPrefixHasModel($test = false)
     {
-        $makerCodes = TblCategoryMaker::select('maker_code')
-            ->groupBy('maker_code')
-            ->orderBy('maker_code')
-            ->get();
+        $db = $test ? 'mysql2' : 'mysql';
 
-        $makerCodes = array_column($makerCodes->toArray(), 'maker_code');
-
-        return MstModelMaker::select('mst_model_maker.model_maker_code')
-            ->leftJoin('mst_model_v2', 'mst_model_maker.model_maker_code', '=', 'mst_model_v2.model_maker_code')
-            ->whereIn('mst_model_maker.model_maker_code', $makerCodes)
-            ->groupBy('mst_model_maker.model_maker_code')
-            ->orderBy('mst_model_maker.model_maker_select_view_no')
-            ->get();
-    }
-
-    public function kanaPrefixHasModel()
-    {
-        return MstModelV2::select('model_kana_prefix')
+        return DB::connection($db)->table('mst_model_v2')->select('model_kana_prefix')
             ->whereRaw("NULLIF(model_kana_prefix, ' ') IS NOT NULL")
             ->groupBy('model_kana_prefix')
             ->orderBy('model_kana_prefix')
             ->get();
     }
 
-    public function namePrefixHasModel()
+    public function namePrefixHasModel($test = false)
     {
-        return MstModelV2::select('model_name_prefix')
+        $db = $test ? 'mysql2' : 'mysql';
+
+        return DB::connection($db)->table('mst_model_v2')->select('model_name_prefix')
             ->whereRaw("NULLIF(model_name_prefix, ' ') IS NOT NULL")
             ->groupBy('model_name_prefix')
             ->orderBy('model_name_prefix')
             ->get();
     }
 
-    public function displacementHasModel()
+    public function displacementHasModel($test = false)
     {
-        $data = MstModelV2::select('model_displacement')
+        $db = $test ? 'mysql2' : 'mysql';
+
+        $data = DB::connection($db)->table('mst_model_v2')->select('model_displacement')
             ->whereRaw("NULLIF(model_displacement, ' ') IS NOT NULL")
             ->groupBy('model_displacement')
             ->orderBy('model_displacement')
@@ -124,9 +115,30 @@ class MotobikeController extends Controller
         return $displacements;
     }
 
-    public function filterMotobikeList($kana=null,  $name=null, $disp=null, $maker=null)
+    public function markerHasModel($test = false)
     {
-        $query = MstModelV2::selectRaw(
+        $db = $test ? 'mysql2' : 'mysql';
+
+        $makerCodes = DB::connection($db)->table('tbl_category_maker')->select('maker_code')
+            ->groupBy('maker_code')
+            ->orderBy('maker_code')
+            ->get();
+
+        $makerCodes = array_column($makerCodes->toArray(), 'maker_code');
+
+        return DB::connection($db)->table('mst_model_maker')->select('mst_model_maker.model_maker_code')
+            ->leftJoin('mst_model_v2', 'mst_model_maker.model_maker_code', '=', 'mst_model_v2.model_maker_code')
+            ->whereIn('mst_model_maker.model_maker_code', $makerCodes)
+            ->groupBy('mst_model_maker.model_maker_code')
+            ->orderBy('mst_model_maker.model_maker_select_view_no')
+            ->get();
+    }
+
+    public function filterMotobikeList($kana=null,  $name=null, $disp=null, $maker=null, $test = false)
+    {
+        $db = $test ? 'mysql2' : 'mysql';
+
+        $query = DB::connection($db)->table('mst_model_v2')->selectRaw(
                 'model_name,
                  model_hyouji,
                  model_count,

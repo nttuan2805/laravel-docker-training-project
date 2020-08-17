@@ -26,13 +26,15 @@
     $ docker-compose exec php-api php artisan cache:clear  
     $ docker-compose exec php-frontend php artisan key:generate  
     $ docker-compose exec php-frontend php artisan cache:clear  
-11. Creating a User for Mysql  
+11. Creating a Dev User and testing db  
     $ docker exec -it db-api bash   // connect by mysql workbench with port 3308
     $ mysql -u root -p  
+    $ mysql> CREATE database webike_test;
     $ mysql> show databases;  
     $ mysql> CREATE USER 'devuser' identified with mysql_native_password by 'devpass';  
     $ mysql> select user, host from mysql.user;  
     $ mysql> GRANT ALL PRIVILEGES ON webike.* TO 'devuser'@'%';  
+    $ mysql> GRANT ALL PRIVILEGES ON webike_test.* TO 'devuser'@'%';  
     $ mysql> FLUSH PRIVILEGES;  
     $ mysql> exit;
 12. Create and import data for webike db

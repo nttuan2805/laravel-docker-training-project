@@ -13,10 +13,10 @@ class CreateTblCategoryMakersTable extends Migration
      */
     public function up()
     {
-        Schema::create('tbl_category_makers', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
-        });
+        // Schema::create('tbl_category_makers', function (Blueprint $table) {
+        //     $table->id();
+        //     $table->timestamps();
+        // });
     }
 
     /**
@@ -26,6 +26,6 @@ class CreateTblCategoryMakersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tbl_category_makers');
+        // Schema::dropIfExists('tbl_category_makers');
     }
 }
