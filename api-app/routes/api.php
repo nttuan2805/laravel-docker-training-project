@@ -14,8 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/modelMakers', 'MstModelMakerController@index');
-Route::get('/modelMakers/{id}', 'MstModelMakerController@show');
 /**
  * Get Header Data
  */
@@ -27,10 +25,10 @@ Route::get('/models/markerHeader', 'MotobikeController@markerHeader');
 /**
  * Get Header Data has Model
  */
-Route::get('/models/kanaPrefixHasModel', 'MotobikeController@kanaPrefixHasModel');
-Route::get('/models/namePrefixHasModel', 'MotobikeController@namePrefixHasModel');
-Route::get('/models/displacementHasModel', 'MotobikeController@displacementHasModel');
-Route::get('/models/markerHasModel', 'MotobikeController@markerHasModel');
+Route::get('/models/kanaPrefixHasModel/{test?}', 'MotobikeController@kanaPrefixHasModel');
+Route::get('/models/namePrefixHasModel/{test?}', 'MotobikeController@namePrefixHasModel');
+Route::get('/models/displacementHasModel/{test?}', 'MotobikeController@displacementHasModel');
+Route::get('/models/markerHasModel/{test?}', 'MotobikeController@markerHasModel');
 
 /**
  * Filter data

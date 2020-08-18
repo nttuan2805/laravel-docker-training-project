@@ -9,17 +9,6 @@ class ModelBikeController extends Controller
 {
     public function index()
     {
-        //$client = new Client(['base_uri' => env('API_URL')]);
-        //$response = $client->request('GET', '/api/modelMakers');
-        //$motobikes = json_decode($response->getBody()->getContents());
-        //return view('greeting', ['allMotoBikes' => $motobikes]);
-
-        //$response = $client->request('GET', '/api/models/kanaPrefixHeader');
-        //$kanaPrefixHeader = json_decode($response->getBody()->getContents());
-        //echo $kanaPrefixHeader;
-        //return view('motobike', ['allMotoBikes' => $motobikes]);
-
-
         $client = new Client(['base_uri' => env('API_URL')]);
 
         /**

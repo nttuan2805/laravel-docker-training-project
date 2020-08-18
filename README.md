@@ -1,4 +1,4 @@
-### Install Laravel for api, frontend
+### Setup Environment
 1. Install and mount composer to docker container  
     $ cd api-app  
     $ docker run --rm -it -v ${PWD}:/app composer install	
@@ -20,7 +20,9 @@
     $ docker-compose exec php-api php artisan cache:clear  
     $ docker-compose exec php-frontend php artisan key:generate  
     $ docker-compose exec php-frontend php artisan cache:clear  
-8. Creating a Dev User and testing db  
+
+### Database  
+1. Creating a Dev User and testing db  
     $ docker exec -it db-api bash   // connect by mysql workbench with port 3308
     $ mysql -u root -p  
     $ mysql> CREATE database webike_test;
@@ -31,10 +33,15 @@
     $ mysql> GRANT ALL PRIVILEGES ON webike_test.* TO 'devuser'@'%';  
     $ mysql> FLUSH PRIVILEGES;  
     $ mysql> exit;
-9. Create table for db (production) and db (testing)  
+2. Create table for db (production) and db (testing)  
     $ docker exec -it php-api bash  
     $ composer dump-autoload  
     $ php artisan migrate:fresh --seed
-10. Test site  
+
+### Test site  
     localhost:8081 // API Service  
-    localhost:8082 // Frontend Service  
+    localhost:8082 // Frontend Service
+
+### Run Unit Test 
+    $ docker exec -it php-api bash   
+    $ ./vendor/bin/phpunit

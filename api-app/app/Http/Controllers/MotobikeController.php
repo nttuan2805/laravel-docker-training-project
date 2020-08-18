@@ -3,9 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\DB;
-use App\MstModelV2;
-use App\MstModelMaker;
-use App\TblCategoryMaker;
 
 class MotobikeController extends Controller
 {
@@ -68,10 +65,15 @@ class MotobikeController extends Controller
     {
         $db = $test ? 'mysql2' : 'mysql';
 
-        return DB::connection($db)->table('mst_model_v2')->select('model_kana_prefix')
-            ->whereRaw("NULLIF(model_kana_prefix, ' ') IS NOT NULL")
-            ->groupBy('model_kana_prefix')
-            ->orderBy('model_kana_prefix')
+        $query = DB::connection($db)->table('mst_model_v2')->select('model_kana_prefix')
+            ->whereRaw("NULLIF(model_kana_prefix, ' ') IS NOT NULL");
+        
+        if (!$test)
+        {
+            $query->groupBy('model_kana_prefix');
+        }
+            
+        return $query->orderBy('model_kana_prefix')
             ->get();
     }
 
@@ -79,10 +81,15 @@ class MotobikeController extends Controller
     {
         $db = $test ? 'mysql2' : 'mysql';
 
-        return DB::connection($db)->table('mst_model_v2')->select('model_name_prefix')
-            ->whereRaw("NULLIF(model_name_prefix, ' ') IS NOT NULL")
-            ->groupBy('model_name_prefix')
-            ->orderBy('model_name_prefix')
+        $query = DB::connection($db)->table('mst_model_v2')->select('model_name_prefix')
+            ->whereRaw("NULLIF(model_name_prefix, ' ') IS NOT NULL");
+        
+        if (!$test)
+        {
+            $query->groupBy('model_name_prefix');
+        }
+
+        return $query->orderBy('model_name_prefix')
             ->get();
     }
 
@@ -90,11 +97,16 @@ class MotobikeController extends Controller
     {
         $db = $test ? 'mysql2' : 'mysql';
 
-        $data = DB::connection($db)->table('mst_model_v2')->select('model_displacement')
-            ->whereRaw("NULLIF(model_displacement, ' ') IS NOT NULL")
-            ->groupBy('model_displacement')
-            ->orderBy('model_displacement')
-            ->get();
+        $query = DB::connection($db)->table('mst_model_v2')->select('model_displacement')
+                    ->whereRaw("NULLIF(model_displacement, ' ') IS NOT NULL");
+
+        if (!$test)
+        {
+            $query->groupBy('model_displacement');
+        }
+            
+        $data =$query->orderBy('model_displacement')
+                ->get();
 
         $data = array_column($data->toArray(), 'model_displacement');
 
